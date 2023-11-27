@@ -3,8 +3,6 @@ name: tiagooamaral deploy-main
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
 
   workflow_dispatch:
 
@@ -17,7 +15,7 @@ jobs:
     steps:
       - name: Repo Checkout
         uses: actions/checkout@v1
-      - name: Hostinger Deployment
+      - name: Locaweb Deployment
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ${{ secrets.FTP_HOST }}

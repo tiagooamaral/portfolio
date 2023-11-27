@@ -5,9 +5,10 @@ use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
 require_once __DIR__ . '/vendor/autoload.php';
-require __DIR__ . '\vendor\PHPMailer-master\PHPMailer-master\src\Exception.php';
-require __DIR__ . '\vendor\PHPMailer-master\PHPMailer-master\src\PHPMailer.php';
-require __DIR__ . '\vendor\PHPMailer-master\PHPMailer-master\src\SMTP.php';
+require __DIR__ . '/vendor/PHPMailer-master/src/Exception.php';
+require __DIR__ . '/vendor/PHPMailer-master/src/PHPMailer.php';
+require __DIR__ . '/vendor/PHPMailer-master/src/SMTP.php';
+
 
 use Dotenv\Dotenv;
 
