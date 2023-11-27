@@ -4,15 +4,26 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
+require_once __DIR__ . '/vendor/autoload.php';
 require __DIR__ . '\vendor\PHPMailer-master\PHPMailer-master\src\Exception.php';
 require __DIR__ . '\vendor\PHPMailer-master\PHPMailer-master\src\PHPMailer.php';
 require __DIR__ . '\vendor\PHPMailer-master\PHPMailer-master\src\SMTP.php';
 
+use Dotenv\Dotenv;
+
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+// Chave secreta do reCAPTCHA
+$recaptcha_secret = getenv('RECAPTCHA_SECRET');
+$smtpHost = getenv('SMTP_HOST');
+$smtpPort = getenv('SMTP_PORT');
+$mailUsername = getenv('MAIL_USERNAME');
+$mailPassword = getenv('MAIL_PASSWORD');
+
 // Verificar resposta do reCAPTCHA
 $recaptcha_response = $_POST['g-recaptcha-response'];
 
-// Chave secreta do reCAPTCHA
-$recaptcha_secret = '6Lf8CWMmAAAAAFhSuwBCVrmlJoVjk1F0HN-TSFo0';
 
 // Fazer a verificação com o reCAPTCHA
 $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
@@ -49,11 +60,11 @@ if ($recaptcha_response_data->success) {
 
         // Set up SMTP configuration
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com'; // Replace with your SMTP server
-        $mail->Port = 587; // Replace with your SMTP port
+        $mail->Host = $smtpHost;
+        $mail->Port = $smtpPort;
         $mail->SMTPAuth = true;
-        $mail->Username = 'site-tiagooamaral@gmail.com'; // Replace with your SMTP username
-        $mail->Password = 'vwhtmsyqjtfbztgf'; // Replace with your SMTP password
+        $mail->Username = $mailUsername;
+        $mail->Password = $mailPassword;
 
         // Set up email content
         $mail->setFrom($email, $name);
