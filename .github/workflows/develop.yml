@@ -1,0 +1,26 @@
+name: tiagooamaral deploy-develop
+
+on:
+  push:
+    branches: [develop]
+  pull_request:
+    branches: [develop]
+
+  workflow_dispatch:
+
+jobs:
+  # deploy develop
+  deploy-develop:
+    runs-on: ubuntu-latest
+    environment:
+      name: develop
+    steps:
+      - name: Repo Checkout
+        uses: actions/checkout@v1
+      - name: Hostinger Deployment
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: public_html/tiagooamaral/develop/

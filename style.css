@@ -4,7 +4,7 @@ ul {
 /* hero background image */
 .bgimage {
     height:100vh;
-    background: url('images/heroImage.jpeg');
+    background: url('images/wp5805427.gif');
     background-size:cover;
     position:relative;
 }
@@ -27,7 +27,7 @@ ul {
     list-style-type: circle;
 }
 .unique-experience {
-    list-style-type: disc;
+    list-style-type: none;
 }
 .list-item-experiences {
     list-style-type: disclosure-closed;
@@ -86,10 +86,20 @@ li.list-item-experiences ul {
     text-align: center;
 }
 /* spacing on all sections */
-#about, #services, #portfolio, #contact {
+#about, #services, #portfolio, #contact, #experiences {
     margin-top: 4rem;
     padding-top: 4rem;
 }
 #contact {
     padding-bottom: 4rem;
+}
+.modal-dialog.modal-wide {
+    width: 90%;
+    max-width: 100%;
+}
+.nav-item .nav-link, .navbar-brand {
+    color: white;
+}
+.container-fluid .row div {
+    margin-top: -225px;
 }

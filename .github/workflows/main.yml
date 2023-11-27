@@ -1,0 +1,26 @@
+name: tiagooamaral deploy-main
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+  workflow_dispatch:
+
+jobs:
+  # deploy producao
+  deploy-main:
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+    steps:
+      - name: Repo Checkout
+        uses: actions/checkout@v1
+      - name: Hostinger Deployment
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: public_html/tiagooamaral/

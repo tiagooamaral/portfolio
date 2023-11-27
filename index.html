@@ -1,10 +1,12 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Portfolio Website-Tiago</title>
+  <title>Tiago Amaral</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="images/about.jpeg">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -12,7 +14,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+  <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbarDark">
     <div class="container">
       <a class="navbar-brand" href="#">Tiago Amaral</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -46,7 +48,7 @@
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
           <h2 class="hero_title">Hi, it's me Tiago</h2>
-          <p class="hero_desc">I am a professional freelancer</p>
+          <p class="hero_desc">I am a developer</p>
         </div>
       </div>
     </div>
@@ -60,21 +62,31 @@
         </div>
 
         <div class="col-lg-8">
-          <p>I was born in Porto Alegre, RS in 1997. I have been an IT professional for exactly 6 years, where I worked
-            in infrastructure, backend and frontend development, microcomputers, service desk, marketing, web design.
+          <p>Hello! I am a technology professional with experience in front-end and back-end.</p>
 
-          </p>
-          <p>
-            Worked at with ERP systems, virtual stores, help desk, CRM, VCS
+          <p>Proficient in PHP, Delphi, Java, Kotlin, and databases such as MySQL, PostgreSQL, SQL Server, Oracle,
+            Firebird.</p>
+
+          <p>Solid skills in HTML, CSS, JavaScript, and frameworks like JQuery.</p>
+
+          <p>Knowledge in REST API, Docker, Kubernetes, and log analysis. Experience with the GCP platform and code
+            versioning with Git.</p>
+
+          <p>You can check out my projects and contributions on my GitHub profile: <a
+              href="https://github.com/tiagooamaral">https://github.com/tiagooamaral</a>.</p>
+
+          <p>I am always looking for new challenges and opportunities to apply my knowledge and offer efficient
+            solutions. If you wish to get in touch, feel free to email me at tglamaral@gmail.com.</p>
+
+          <p>Thank you for your attention, and I look forward to discussing and collaborating in the technology field!
           </p>
 
-          </p>
           <div class="row mt-3">
             <div class="col-md-6">
               <ul>
                 <li><strong>Name: </strong>Tiago Amaral</li>
                 <li><strong>Age: </strong>25</li>
-                <li><strong>Occupation: </strong>Web Developer</li>
+                <li><strong>Occupation: </strong>Developer</li>
 
               </ul>
             </div>
@@ -86,498 +98,675 @@
               </ul>
             </div>
           </div>
-          <div class="row mt-3">
-            <p> Discover my experience: </p>
 
-            <ul class="list-experiences">
-              <li class="list-item-experiences">
-                <a class="title-experience">Simplo7 - Computational Support Analyst</a>
-                <ul>
-                  <li class="unique-experience">
-                    <p class="role" style="margin-top:15px;">
-                      <span>Role:</span> Computational Support Analyst - Level 3
-                    </p>
-                    <p class="company">
-                      <span>Company:</span> D Loja Virtual Comercio de Solucoes Digitais LTDA
-                    </p>
-                    <p class="time">
-                      <span>Time:</span>
-                      1 year - July 2022 - Present (3 months)
-                    </p>
-                    <p class="city">
-                      <span>City:</span> Canoas, Rio Grande do Sul, Brazil
-                    </p>
-                    <div class="experience"><a href="javascript:;">See more..</a>
-                      <ul>
-                        <li class="li-technology">
-                          <span>Front End:</span>
-                          <p>HTML, CSS, JavaScript, JQuery</p>
-                        </li>
-                        <li class="li-technology">
-                          <span>Back-End:</span>
-                          <p>GrayLog, ElasticSearch, MySQL, API Rest, JSON, PHP, CakePHP, MVC, Apache, GIT.</p>
-                        </li>
-                        <li class="li-assignments">
-                          Code Maintenance and Bug Fixes;
-                        </li>
-                        <li class="li-assignments">
-                          Database modeling and maintenance.
-                        </li>
-                        <li class="li-assignments">
-                          Log analysis.
-                        </li>
-                        <li class="li-assignments">
-                          API request analysis.
-                        </li>
-                        <li class="li-assignments">
-                          Visual changes in the customer store.
-                        </li>
-                        <li class="li-assignments">
-                          Assist Level 2 attendants on the application, log analysis, extraction of
-                        </li>
-                        <li class="li-assignments">
-                          information via database, visual adjustments in the application;
-                        </li>
-                        <li class="li-assignments">
-                          Assist Level 1 attendants with queries regarding the platform company e-commerce.
-                        </li>
-                      </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="experiences">
+    <div class="container mt-4 pt-4">
+      <h1 class="text-center">Discover my experiences</h1>
+      <div class="row mt-4">
+        <div class="col-4">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list"
+              href="#list-home" role="tab" aria-controls="list-home" aria-selected="true">Simplo7 - Computational
+              Support Analyst</a>
+            <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list"
+              href="#list-profile" role="tab" aria-controls="list-profile" aria-selected="false">ASSET - Web Design
+              Development</a>
+            <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list"
+              href="#list-messages" role="tab" aria-controls="list-messages" aria-selected="false">Integrade Digital -
+              Infrastructure analyst</a>
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list"
+              href="#list-settings" role="tab" aria-controls="list-settings">Webplanet - IT Business Analyst</a>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade active show" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+              <h4>
+                <p class="role" style="margin-top:15px;">
+                  <span>Role:</span> Computational Support Analyst - Level 3
+                  <button type="button" class="btn btn-info float-right" id="more-1">MORE</button>
+                </p>
+              </h4>
+              <div class="unique-experience">
+                <p class="company">
+                  <span class="fw-bolder">Company:</span> D Loja Virtual Comercio de Solucoes Digitais LTDA
+                </p>
+                <p class="time">
+                  <span class="fw-bolder">Time:</span>
+                  1 year - July 2022 - Present (3 months)
+                </p>
+                <p class="city">
+                  <span class="fw-bolder">City:</span> Canoas, Rio Grande do Sul, Brazil
+                </p>
+                <div class="experience">
+                  <ul>
+                    <li class="li-technology">
+                      <span class="fw-bolder">Front End:</span>
+                      <p>HTML, CSS, JavaScript, JQuery</p>
+                    </li>
+                    <li class="li-technology">
+                      <span class="fw-bolder">Back-End:</span>
+                      <p>GrayLog, ElasticSearch, MySQL, API Rest, JSON, PHP, CakePHP, MVC, Apache, GIT.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-wide" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="myModalLabel">Job Responsibilities</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
                     </div>
-                  </li>
-                  <li class="unique-experience">
-                    <p class="role" style="margin-top:15px;">
-                      <span>Role:</span> Computational Support Analyst - Level 1
-                    </p>
-                    <p class="company">
-                      <span>Company:</span> D Loja Virtual Comercio de Solucoes Digitais LTDA
-                    </p>
-                    <p class="time">
-                      <span>Time:</span>
-                      October 2021 - July 2022 (10 months)
-                    </p>
-                    <p class="city">
-                      <span>City:</span> Canoas, Rio Grande do Sul, Brazil
-                    </p>
-                    <div class="experience"><a href="javascript:;">See more..</a>
-                      <ul>
-                        <li class="li-technology">
-                          <span>Front End:</span>
-                          <p>HTML, CSS, JavaScript, JQuery</p>
-                        </li>
-                        <li class="li-technology">
-                          <span>Back-End:</span>
-                          <p>GrayLog, ElasticSearch, MySQL, Rest API, JSON.</p>
-                        </li>
-                        <li class="li-assignments">
-                          Adjust basic visuals in the customer's store;
-                        </li>
-                        <li class="li-assignments">
-                          Log analysis;
-                        </li>
-                        <li class="li-assignments">
-                          Basic changes to the database.
-                        </li>
-                        <li class="li-assignments">
-                          API request analysis.
-                        </li>
-                        <li class="li-assignments">
-                          Technical support for customers via telephone and email,
-                        </li>
-                        <li class="li-assignments">
-                          Assistance with doubts regarding the company's e-commerce platform.
-                        </li>
-                        <li class="li-assignments">
-                          Notes and analysis of DNS errors in the client record.
-                        </li>
-                        <li class="li-assignments">
-                          Notes and error analysis of email server configurations SMTP.
-                        </li>
-                      </ul>
+                    <div class="modal-body">
+                      <h5>PHP Code Maintenance and Bug Fixing</h5>
+                      <p>Responsible for maintaining and fixing bugs in PHP code using CakePHP, ensuring stability and
+                        proper functioning of systems.</p>
+
+                      <h5>JavaScript and jQuery Development</h5>
+                      <p>Perform maintenance and code development in JavaScript and jQuery, focused on implementing
+                        functionalities and visual adjustments on the platform.</p>
+
+                      <h5>Database Modeling and Maintenance</h5>
+                      <p>Perform database modeling and maintenance, ensuring integrity and efficiency of information.
+                      </p>
+
+                      <h5>Extensive Log Analysis</h5>
+                      <p>Analyze extensive logs to identify and solve problems, especially due to the large number of
+                        stores and integrations in the system. This involved the use of GrayLog and ElasticSearch for
+                        advanced log analysis and monitoring.</p>
+
+                      <h5>API Request Analysis</h5>
+                      <p>Conduct analysis of API requests, both for integrations with other platforms and for the
+                        system's own API, using JSON and REST as communication formats.</p>
+
+                      <h5>Visual Changes Implementation</h5>
+                      <p>Implement visual changes in the client's store using HTML, CSS, JavaScript, and jQuery, aiming
+                        to provide an attractive and intuitive user experience.</p>
+
+                      <h5>Level 2 Support Assistance</h5>
+                      <p>Assist Level 2 support agents regarding the application, including in-depth log analysis,
+                        extracting relevant information from the database, and making visual adjustments to the
+                        application.</p>
+
+                      <h5>Level 1 Support Assistance</h5>
+                      <p>Assist Level 1 support agents by providing support and clarifying questions related to the
+                        company's e-commerce platform.</p>
                     </div>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="list-item-experiences">
-                <a class="title-experience">ASSET - Web Design Development</a>
-                <ul>
-                  <li class="unique-experience">
-                    <p class="role" style="margin-top:15px;">
-                      <span>Role:</span> Web Design Development
-                    </p>
-                    <p class="company">
-                      <span>Company:</span> ASSET PATRIMONIAL E INFORMATICA LTDA
-                    </p>
-                    <p class="time">
-                      <span>Time:</span>
-                      May 2020 - January 2021 (9 months)
-                    </p>
-                    <p class="city">
-                      <span>City:</span> São Paulo - Brazil
-                    </p>
-                    <div class="experience"><a href="javascript:;">See more..</a>
-                      <ul>
-                        <li class="li-technology">
-                          <span>Back-End:</span>
-                          <p>MySQL, Firebird, PHP, PHPMailer, SQL Server, Delphi XE, iTop.</p>
-                        </li>
-                        <li class="li-assignments">
-                          Software maintenance and development;
-                        </li>
-                        <li class="li-assignments">
-                          <p style="margin-bottom: 0;">Maintenance on the company website;</p>
-                          <p style="margin-bottom: 0;">Creating a contact form;</p>
-                          <p style="margin-bottom: 0;">Installing reCAPTCHA for greater security in registrations;</p>
-                        </li>
-                        <li class="li-assignments">
-                          Installation, administration and maintenance of the Resource Management tool IT (Help Desk).
-                        </li>
-                        <li class="li-assignments">
-                          <p style="margin-bottom: 0;">Digital Marketing Administration;</p>
-                          <p style="margin-bottom: 0;">Creation and development of advertising material: Videos, Images,
-                            Texts, Adverts;</p>
-                          <p style="margin-bottom: 0;">Visual improvements in texts, images and site layout;</p>
-                          <p style="margin-bottom: 0;">Blog Creation;</p>
-                        </li>
-                      </ul>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="button" class="btn btn-primary">Salvar</button>
                     </div>
-                  </li>
-                </ul>
+                  </div>
+                </div>
+              </div>
 
-              </li>
 
-              <li class="list-item-experiences">
-                <a class="title-experience">Integrade Digital - Infrastructure analyst</a>
-                <ul>
-                  <li class="unique-experience">
-                    <p class="role" style="margin-top:15px;">
-                      <span>Role:</span> Infrastructure Analyst
-                    </p>
-                    <p class="company">
-                      <span>Company:</span> Integrade Digital
-                    </p>
-                    <p class="time">
-                      <span>Time:</span>
-                      August 2019 - May 2020 (10 months)
-                    </p>
-                    <p class="city">
-                      <span>City:</span> Sao Paulo, Sao Paulo, Brazil
-                    </p>
-                    <div class="experience"><a href="javascript:;">See more..</a>
-                      <ul>
-                        <li class="li-technology">
-                          <span>Back-End:</span>
-                          <p>Linux, Linux Firewall, VMware ESX, Windows Server, Firebird, Oracle Database, Android
-                            Studio, Delphi, Java, Kotlin, PHP, Flash Player.</p>
-                        </li>
-                        <li class="li-assignments">
-                          Responsible for installing, maintaining, controlling and managing the following services:
-                          <p style="margin-bottom: 0;">Internal network;</p>
-                          <p style="margin-bottom: 0;">Application, data, development and security servers.</p>
-                          <p style="margin-bottom: 0;">Hardware and software (licenses)</p>
-                          <p style="margin-bottom: 0;">Databases;</p>
-                          <p style="margin-bottom: 0;">External access to the corporate network;</p>
-                          <p style="margin-bottom: 0;">Backup and versioning of the technologies used;</p>
-                        </li>
-                        <li class="li-assignments">
-                          Technical support to internal and external staff;
-                        </li>
-                        <li class="li-assignments">
-                          Development and maintenance of Desktop and Mobile systems;
-                        </li>
-                        <li class="li-assignments">
-                          Performance and capability tests, interface evaluation, functionality of the developed
-                          applications.
-                        </li>
-                      </ul>
+              <h4>
+                <p class="role" style="margin-top:15px;">
+                  <span>Role:</span> Computational Support Analyst - Level 1
+                  <button type="button" class="btn btn-info float-right" id="more-2">MORE</button>
+                </p>
+              </h4>
+              <div class="unique-experience">
+                <p class="company">
+                  <span class="fw-bolder">Company:</span> D Loja Virtual Comercio de Solucoes Digitais LTDA
+                </p>
+                <p class="time">
+                  <span class="fw-bolder">Time:</span>
+                  October 2021 - July 2022 (10 months)
+                </p>
+                <p class="city">
+                  <span class="fw-bolder">City:</span> Canoas, Rio Grande do Sul, Brazil
+                </p>
+                <div class="experience">
+                  <ul>
+                    <li class="li-technology">
+                      <span class="fw-bolder">Front End:</span>
+                      <p>HTML, CSS, JavaScript, JQuery</p>
+                    </li>
+                    <li class="li-technology">
+                      <span class="fw-bolder">Back-End:</span>
+                      <p>GrayLog, ElasticSearch, MySQL, Rest API, JSON.</p>
+                    </li>
+                  </ul>
+                  <!-- Modal -->
+                  <div class="modal fade" id="modal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-wide" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="myModalLabel">Job Responsibilities</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <h5>Basic Visual Adjustments</h5>
+                          <p>Perform basic visual adjustments on the client's store using HTML, CSS, and JavaScript to
+                            enhance appearance and usability.</p>
+
+                          <h5>Comprehensive Log Analysis</h5>
+                          <p>Analyze logs comprehensively to identify and solve problems in different areas of the
+                            system.
+                          </p>
+
+                          <h5>Basic Database Changes</h5>
+                          <p>Make basic changes to the database, such as queries and updates, to meet the specific needs
+                            of the client.</p>
+
+                          <h5>API Request Analysis</h5>
+                          <p>Conduct analysis of API requests to ensure correct and efficient integration between
+                            different systems and services.</p>
+
+                          <h5>Technical Support</h5>
+                          <p>Provide technical support to customers through phone calls and email, resolving inquiries
+                            and
+                            issues related to the company's e-commerce platform.</p>
+
+                          <h5>DNS Error Identification</h5>
+                          <p>Identify and analyze DNS errors in the client's registration, assisting in resolving
+                            website
+                            access issues.</p>
+
+                          <h5>Email and SMTP Server Configuration</h5>
+                          <p>Identify and analyze email and SMTP server configuration errors to ensure the proper
+                            functioning of the email sending service.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                          <button type="button" class="btn btn-primary">Salvar</button>
+                        </div>
+                      </div>
                     </div>
-                  </li>
-                </ul>
+                  </div>
+                </div>
+              </div>
 
-              </li>
+            </div>
+            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+              <h4>
+                <p class="role" style="margin-top:15px;">
+                  <span>Role:</span> Web Design Development
+                  <button type="button" class="btn btn-info float-right" id="more-3">MORE</button>
+                </p>
+              </h4>
+              <div class="unique-experience">
+                <p class="company">
+                  <span class="fw-bolder">Company:</span> ASSET PATRIMONIAL E INFORMATICA LTDA
+                </p>
+                <p class="time">
+                  <span class="fw-bolder">Time:</span>
+                  May 2020 - January 2021 (9 months)
+                </p>
+                <p class="city">
+                  <span class="fw-bolder">City:</span> São Paulo - Brazil
+                </p>
+                <div class="experience">
+                  <ul>
+                    <li class="li-technology">
+                      <span class="fw-bolder">Back-End:</span>
+                      <p>MySQL, Firebird, PHP, PHPMailer, SQL Server, Delphi XE, iTop.</p>
+                    </li>
+                  </ul>
+                  <!-- Modal -->
+                  <div class="modal fade" id="modal-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-wide" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="myModalLabel">Job Responsibilities</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <h5>Delphi Software Maintenance and Development</h5>
+                          <p>Responsible for the maintenance and development of software developed in Delphi, ensuring
+                            functionality and continuous improvement of systems.</p>
 
-              <li class="list-item-experiences">
-                <a class="title-experience">Webplanet - IT Business Analyst</a>
-                <ul>
-                  <li class="unique-experience">
-                    <p class="role" style="margin-top:15px;">
-                      <span>Role:</span> IT Business Analyst
-                    </p>
-                    <p class="company">
-                      <span>Company:</span> Webplanet Serviços de Informática LTDA
-                    </p>
-                    <p class="time">
-                      <span>Time:</span>
-                      September 2017 - August 2019 (2 years)
-                    </p>
-                    <p class="city">
-                      <span>City:</span> Sao Paulo, Sao Paulo, Brazil
-                    </p>
-                    <div class="experience"><a href="javascript:;">See more..</a>
-                      <ul>
-                        <li class="li-technology">
-                          <span>Back-End:</span>
-                          <p>Linux, Linux Firewall, VMware ESX, Windows Server, Firebird, PHP.</p>
-                        </li>
-                        <li class="li-assignments">
-                          Responsible for installing, maintaining, controlling and managing the following services:
-                          <p style="margin-bottom: 0;">Internal network;</p>
-                          <p style="margin-bottom: 0;">Application, data, development and security servers.</p>
-                          <p style="margin-bottom: 0;">Hardware and software (licenses)</p>
-                          <p style="margin-bottom: 0;">Databases;</p>
-                          <p style="margin-bottom: 0;">External access to the corporate network;</p>
-                          <p style="margin-bottom: 0;">Backup and versioning of the technologies used;</p>
-                        </li>
-                        <li class="li-assignments">
-                          Technical support for customers via telephone and email;
-                        </li>
-                        <li class="li-assignments">
-                          Development and maintenance of systems;
-                        </li>
-                        <li class="li-assignments">
-                          Assistance with doubts regarding the company's ERP and POS system.
-                        </li>
-                        <li class="li-assignments">
-                          Log analysis.
-                        </li>
-                        <li class="li-assignments">
-                          Database modeling and maintenance.
-                        </li>
-                        <li class="li-assignments">
-                          Maintenance on the company website;
-                        </li>
-                        <li class="li-assignments">
-                          Installation, administration and maintenance of the Resource Management tool IT (Help Desk).
-                        </li>
-                      </ul>
+                          <h5>WordPress Website Maintenance</h5>
+                          <p>Maintain the company's website developed in WordPress, ensuring its functionality,
+                            security, and regular updates.</p>
+
+                          <h5>Contact Form Creation</h5>
+                          <p>Create a contact form for the website, facilitating interaction with visitors.</p>
+
+                          <h5>reCAPTCHA Implementation</h5>
+                          <p>Implement reCAPTCHA to increase security in registrations and protect against spam and
+                            bots.</p>
+
+                          <h5>IT Management Tool Administration</h5>
+                          <p>Install, administer, and maintain the IT Management (Help Desk) tool, providing efficient
+                            and organized support to the team and users.</p>
+
+                          <h5>Digital Marketing Administration</h5>
+                          <p>Administer digital marketing strategies and campaigns to promote the company and its
+                            products/services.</p>
+
+                          <h5>Creation and Development of Advertising Material</h5>
+                          <p>Create and develop advertising material, including videos, images, texts, and ads, to
+                            increase visibility and attract the target audience.</p>
+
+                          <h5>Visual Improvements on the Website</h5>
+                          <p>Make visual improvements to the website's texts, images, and layout, ensuring an attractive
+                            and professional presentation.</p>
+
+                          <h5>Blog Creation</h5>
+                          <p>Create a blog to provide relevant and informative content to website visitors.</p>
+
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                          <button type="button" class="btn btn-primary">Salvar</button>
+                        </div>
+                      </div>
                     </div>
-                  </li>
-                </ul>
+                  </div>
+                </div>
+              </div>
 
-              </li>
-            </ul>
+            </div>
+            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+              <h4>
+                <p class="role" style="margin-top:15px;">
+                  <span>Role:</span> Infrastructure Analyst
+                  <button type="button" class="btn btn-info float-right" id="more-4">MORE</button>
+                </p>
+              </h4>
+              <div class="unique-experience">
+                <p class="company">
+                  <span class="fw-bolder">Company:</span> Integrade Digital
+                </p>
+                <p class="time">
+                  <span class="fw-bolder">Time:</span>
+                  August 2019 - May 2020 (10 months)
+                </p>
+                <p class="city">
+                  <span class="fw-bolder">City:</span> Sao Paulo, Sao Paulo, Brazil
+                </p>
+                <div class="experience">
+                  <ul>
+                    <li class="li-technology">
+                      <span class="fw-bolder">Back-End:</span>
+                      <p>Linux, Linux Firewall, VMware ESX, Windows Server, Firebird, Oracle Database, Android
+                        Studio, Delphi, Java, Kotlin, PHP, Flash Player.</p>
+                    </li>
+                  </ul>
+                  <!-- Modal -->
+                  <div class="modal fade" id="modal-4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-wide" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="myModalLabel">Job Responsibilities</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <h5>Installation, Maintenance, and Management</h5>
+                          <ul>
+                            <li>Internal network administration, ensuring connectivity and system security.</li>
+                            <li>Application, data, development, and security server management, ensuring proper
+                              functioning and availability of services.</li>
+                            <li>Hardware and software management, including necessary license management.</li>
+                            <li>Database administration, ensuring integrity and performance of systems, with a focus on
+                              Oracle and Firebird databases.</li>
+                            <li>Configuration and maintenance of external access to the corporate network, ensuring
+                              security and availability of resources.</li>
+                            <li>Implementation of backup and versioning strategies for the utilized technologies.</li>
+                            <li>Technical support for internal and external teams, providing assistance and
+                              problem-solving for systems and infrastructure.</li>
+                          </ul>
+
+                          <h5>Desktop and Mobile Application Development and Maintenance</h5>
+                          <ul>
+                            <li>Development and maintenance of desktop and mobile systems using Delphi, Java (Android
+                              Studio), and Kotlin for new application projects. Ensuring functionality, scalability, and
+                              usability of the developed applications.</li>
+                            <li>Performance and capacity testing, evaluation of interface and functionality of developed
+                              applications to ensure quality and efficiency of systems.</li>
+                          </ul>
+
+                          <h5>Microcomputing Management</h5>
+                          <p>Management of microcomputing systems.</p>
+
+                          <h5>Oracle and Firebird Database Administration</h5>
+                          <p>Administration of Oracle and Firebird databases, ensuring data consistency, integrity, and
+                            security.</p>
+
+                          <h5>WordPress Website Maintenance</h5>
+                          <p>Maintenance of the company's website developed in WordPress, ensuring its functionality,
+                            security, and regular updates.</p>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary">Salvar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+              <h4>
+                <p class="role" style="margin-top:15px;">
+                  <span>Role:</span> IT Business Analyst
+                  <button type="button" class="btn btn-info float-right" id="more-5">MORE</button>
+                </p>
+              </h4>
+              <div class="unique-experience">
+                <p class="company">
+                  <span class="fw-bolder">Company:</span> Webplanet Serviços de Informática LTDA
+                </p>
+                <p class="time">
+                  <span class="fw-bolder">Time:</span>
+                  September 2017 - August 2019 (2 years)
+                </p>
+                <p class="city">
+                  <span class="fw-bolder">City:</span> Sao Paulo, Sao Paulo, Brazil
+                </p>
+                <div class="experience">
+                  <ul>
+                    <li class="li-technology">
+                      <span class="fw-bolder">Back-End:</span>
+                      <p>Linux, Linux Firewall, VMware ESX, Windows Server, Firebird, PHP.</p>
+                    </li>
+                  </ul>
+                  <!-- Modal -->
+                  <div class="modal fade" id="modal-5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-wide" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="myModalLabel">Job Responsibilities</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <h5>Installation, Maintenance, and Management</h5>
+                          <ul>
+                            <li>Internal network administration, ensuring connectivity and system security.</li>
+                            <li>Application, data, development, and security server management, ensuring proper
+                              functioning and availability of services.</li>
+                            <li>Deployment and administration of servers using VMware ESX platform to optimize
+                              resources and ensure high availability.</li>
+                            <li>Hardware and software management, including necessary license management.</li>
+                            <li>Database administration, ensuring integrity and performance of systems, with a focus
+                              on Firebird database.</li>
+                            <li>Configuration and maintenance of external access to the corporate network, ensuring
+                              security and availability of resources.</li>
+                            <li>Implementation of backup and versioning strategies for the utilized technologies.</li>
+                            <li>Development and maintenance of systems in Delphi, ensuring functionality and
+                              scalability of the applications.</li>
+                          </ul>
+
+                          <h5>Technical Support</h5>
+                          <p>Providing technical support to clients through phone and email, resolving issues and
+                            providing guidance.</p>
+
+                          <h5>Assistance with ERP and POS System</h5>
+                          <p>Assisting with inquiries related to the company's ERP and POS systems developed in
+                            Delphi, ensuring proper functioning and appropriate utilization of these tools.</p>
+
+                          <h5>Log Analysis</h5>
+                          <p>Performing log analysis, identifying and resolving issues to optimize system performance.
+                          </p>
+
+                          <h5>Firebird Database Maintenance</h5>
+                          <p>Performing changes in the Firebird database, ensuring data consistency and integrity.</p>
+
+                          <h5>WordPress Website Maintenance</h5>
+                          <p>Maintaining the company's website developed in WordPress, ensuring its functionality,
+                            security, and regular updates.</p>
+
+                          <h5>IT Management Tool Administration</h5>
+                          <p>Installation, administration, and maintenance of the IT Management tool (Help Desk).</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                          <button type="button" class="btn btn-primary">Salvar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
+    </div>
   </section>
 
   <section id="services">
     <div class="container">
-        <h1 class="text-center">Services</h1>
-        <div class="row">
-            <div class="col-lg-4 mt-4">
-                <div class="card servicesText">
-                    <div class="card-body">
-                        <i class="fas servicesIcon fa-clock"></i>
-                        <h4 class="card-title mt-3">Website Development</h4>
-                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                    </div>
-                </div>  
+      <h1 class="text-center">Services</h1>
+      <div class="row">
+        <div class="col-lg-4 mt-4">
+          <div class="card servicesText">
+            <div class="card-body">
+              <i class="fas servicesIcon fa-clock" aria-hidden="true"></i>
+              <h4 class="card-title mt-3">Software development</h4>
+              <p class="card-text mt-3">Creation of custom applications, systems, and computer programs to meet specific
+                client needs.
+              </p>
             </div>
-            <div class="col-lg-4 mt-4">
-                <div class="card servicesText">
-                    <div class="card-body">
-                        <i class='fas servicesIcon fa-layer-group'></i>
-                        <h4 class="card-title mt-3">Website Design</h4>
-                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                    </div>
-                </div>  
+          </div>
+        </div>
+        <div class="col-lg-4 mt-4">
+          <div class="card servicesText">
+            <div class="card-body">
+              <i class="fas servicesIcon fa-layer-group" aria-hidden="true"></i>
+              <h4 class="card-title mt-3">Web development:</h4>
+              <p class="card-text mt-3">Creation of websites and web applications, ranging from static pages to dynamic
+                and interactive applications.
+              </p>
             </div>
-
-            <div class="col-lg-4 mt-4">
-                <div class="card servicesText">
-                    <div class="card-body">
-                        <i class='far servicesIcon fa-check-circle'></i>
-                        <h4 class="card-title mt-3">Website Deployment</h4>
-                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                    </div>
-                </div>  
-            </div>
+          </div>
         </div>
 
-        <div class="row">
-            <div class="col-lg-4 mt-4">
-                <div class="card servicesText">
-                    <div class="card-body">
-                        <i class='fas servicesIcon fa-search'></i>
-                        <h4 class="card-title mt-3">SEO</h4>
-                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                    </div>
-                </div>  
+        <div class="col-lg-4 mt-4">
+          <div class="card servicesText">
+            <div class="card-body">
+              <i class="far servicesIcon fa-check-circle" aria-hidden="true"></i>
+              <h4 class="card-title mt-3">Mobile app development</h4>
+              <p class="card-text mt-3">Creation of applications for mobile devices, such as smartphones and tablets,
+                for platforms like iOS and Android.
+              </p>
             </div>
-
-            <div class="col-lg-4 mt-4">
-                <div class="card servicesText">
-                    <div class="card-body">
-                        <i class='fas servicesIcon fa-shield-alt'></i>
-                        <h4 class="card-title mt-3">DevOps</h4>
-                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                    </div>
-                </div>  
-            </div>
-
-            <div class="col-lg-4 mt-4">
-                <div class="card servicesText">
-                    <div class="card-body">
-                        <i class='fas servicesIcon fa-wrench'></i>
-                        <h4 class="card-title mt-3">QA</h4>
-                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                    </div>
-                </div>  
-            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 mt-4">
+          <div class="card servicesText">
+            <div class="card-body">
+              <i class="fas servicesIcon fa-wrench" aria-hidden="true"></i>
+              <h4 class="card-title mt-3">Maintenance and support</h4>
+              <p class="card-text mt-3">Updating, bug fixing, and ongoing support for existing applications and systems.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4">
+          <div class="card servicesText">
+            <div class="card-body">
+              <i class="fas servicesIcon fa-shield-alt" aria-hidden="true"></i>
+              <h4 class="card-title mt-3">System integration</h4>
+              <p class="card-text mt-3">Connecting and integrating different systems and technologies to enable
+                information exchange and data synchronization.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4">
+          <div class="card servicesText">
+            <div class="card-body">
+              <i class="fas servicesIcon fa-search" aria-hidden="true"></i>
+              <h4 class="card-title mt-3">Software testing</h4>
+              <p class="card-text mt-3">Planning and execution of tests to ensure the quality and performance of
+                applications and systems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
-<!-- portfolio section-->
-<section id="portfolio">
-  <div class="container mt-3">
+  </section>
+  <!-- portfolio section-->
+  <section id="portfolio">
+    <div class="container mt-3">
       <h1 class="text-center">Portfolio</h1>
       <div class="row">
-          <div class="col-lg-4 mt-4">
-              <div class="card">
-                  <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
-                  <div class="card-body">
-                      <h4 class="card-title">YouTube Clone</h4>
-                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <div class="text-center">
-                          <a href="#" class="btn btn-success">Link</a>
-                      </div>
-                  </div>
+        <div class="col-lg-4 mt-4">
+          <div class="card">
+            <img class="card-img-top align-self-center" src="images/icone-convid4dos_black.png" alt="Card image"
+              style="width:50%">
+            <div class="card-body">
+              <h4 class="card-title">Convid4dos</h4>
+              <p class="card-text">
+              <p>Effortlessly manage your guest list with our real-time guest registration app.</p>
+              <p>Convid4dos is a powerful Java-powered application that utilizes Firebase, a reliable NoSQL database, to
+                provide you with a seamless and efficient way to track and confirm guest attendance.</p>
+              <p>With Convid4dos, you can easily create and update your guest list</p>
+              <p>Experience the convenience and efficiency of Convid4dos today!</p>
+              <p>Discover the project in the link below</p>
+              </p>
+              <div class="text-center">
+                <a href="https://github.com/tiagooamaral/Convid4dos" class="btn btn-success">Link</a>
               </div>
+            </div>
           </div>
+        </div>
 
-          <div class="col-lg-4 mt-4">
-              <div class="card portfolioContent">
-                  <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                  <div class="card-body">
-                      <h4 class="card-title">Quiz App</h4>
-                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <div class="text-center">
-                          <a href="#" class="btn btn-success">Link</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
+        <div class="col-lg-4 mt-4">
+          <div class="card portfolioContent">
+            <img class="card-img-top align-self-center" src="images/icone-image-upload.png" alt="Card image"
+              style="width:50%">
+            <div class="card-body">
+              <h4 class="card-title">ImageUpload</h4>
+              <p class="card-text">
+              <p>ImageUploader is a powerful Java-based mobile application that simplifies the process of uploading
+                images to a server. Leveraging the capabilities of Retrofit and okhttp3 libraries, my app offers a
+                seamless and secure image upload experience.</p>
 
-          <div class="col-lg-4 mt-4">
-              <div class="card portfolioContent">
-                  <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
-                  <div class="card-body">
-                      <h4 class="card-title">Product Landing Page</h4>
-                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <div class="text-center">
-                          <a href="#" class="btn btn-success">Link</a>
-                      </div>
-                  </div>
+              <p>With ImageUploader, you can easily select images from your device's gallery and the app performs smooth
+                and efficient image uploads to the server of your choice.</p>
+
+              <p>Experience the convenience and efficiency of ImageUploader today and streamline your image upload
+                process with just a few taps!</p>
+
+              <p>Discover the project in the link below:</p>
+              </p>
+              <div class="text-center">
+                <a href="https://github.com/tiagooamaral/ImageUpload" class="btn btn-success">Link</a>
               </div>
+            </div>
           </div>
+        </div>
+
+        <div class="col-lg-4 mt-4">
+          <div class="card portfolioContent">
+            <img class="card-img-top align-self-center" src="images/icone-integrade-biz-api.png" alt="Card image"
+              style="width:50%">
+            <div class="card-body">
+              <h4 class="card-title">Integrade BizAPI</h4>
+              <p class="card-text">
+              <p>The "IntegradeBizAPI" project is an ongoing backend API server that aims to simplify and automate the
+                business
+                operations of a company. Use of modern technologies, building a
+                robust and flexible solution. Still in the development phase, I'm excited about the
+                potential of BizAPI to revolutionize the integrated way manage their operations. Creating a powerful and
+                highly customizable platform that meets the unique needs of the company</p>
+              </p>
+              <div class="text-center hide">
+                <a href="#" class="btn btn-success">Link</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <br>
-      <div class="row">
-          <div class="col-lg-4 mt-4">
-              <div class="card portfolioContent">
-                  <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                  <div class="card-body">
-                      <h4 class="card-title">Messaging Service</h4>
-                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <div class="text-center">
-                          <a href="#" class="btn btn-success">Link</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
+    </div>
+    </div>
+  </section>
 
-          <div class="col-lg-4 mt-4">
-              <div class="card portfolioContent">
-                  <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
-                  <div class="card-body">
-                      <h4 class="card-title">Twitter Clone</h4>
-                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <div class="text-center">
-                          <a href="#" class="btn btn-success">Link</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="col-lg-4 mt-4">
-              <div class="card portfolioContent">
-                  <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                  <div class="card-body">
-                      <h4 class="card-title">Blog App</h4>
-                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <div class="text-center">
-                          <a href="#" class="btn btn-success">Link</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-</section>
-
-<!-- contact section-->
-<section id="contact">
-  <div class="container mt-3 contactContent">
+  <!-- contact section-->
+  <section id="contact">
+    <div class="container mt-3 contactContent">
       <h1 class="text-center">Contact Me</h1>
 
       <div class="row mt-4">
-          <div class="col-lg-6">
-              <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
-              <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
-                  <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
-                      <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=new+york&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
-                      </iframe>
-                  </div>
-                  <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
-                  <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
-                  </style>
-              </div>
+        <div class="col-lg-6">
+          <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+            <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55331.314709665654!2d-51.22072496888498!3d-29.915937451077028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197aa8021e5571%3A0xd0de460f7518f586!2sCanoas%2C%20RS!5e0!3m2!1spt-BR!2sbr!4v1685761412103!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <a class="googlemaps-html" href="https://www.embed-map.com"
+              id="get-data-forembedmap">https://www.embed-map.com</a>
+            <style>
+              #embedmap-canvas img {
+                max-width: none !important;
+                background: none !important;
+                font-size: inherit;
+                font-weight: inherit;
+              }
+            </style>
           </div>
+        </div>
 
-          <div class="col-lg-6">
-              <!-- form fields -->
-              <form>
-                  <input type="text" class="form-control form-control-lg" placeholder="Name">
-                  <input type="email" class="form-control mt-3" placeholder="Email">
-                  <input type="text" class="form-control mt-3" placeholder="Subject">
-                  <div class="mb-3 mt-3">
-                      <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
-                  </div>
-              </form>
-              <button type="button" class="btn btn-success mt-3">Contact Me</button>
-              
-          </div>
+        <div class="col-lg-6">
+          <!-- form fields -->
+          <form method="post" action="send_email.php">
+            <input class="form-control form-control-lg" type="text" id="name" name="name" placeholder="Name" required>
+            <input type="email" id="email" name="email" class="form-control mt-3" placeholder="Email" required>
+            <input type="subject" id="subject" name="subject" class="form-control mt-3" placeholder="Subject" required>
+            <div class="mb-3 mt-3">
+              <textarea class="form-control" id="message" name="message" rows="4" placeholder="Project Details"
+                required></textarea>
+            </div>
+            <div class="g-recaptcha" id="g-recaptcha-response" name="g-recaptcha-response"
+              data-sitekey="6Lf8CWMmAAAAAHqmkxld_vXIC7YtOFdKxvuu_19H"></div>
+            <input type="submit" class="btn btn-success mt-3" value="Contact Me">
+          </form>
+        </div>
 
       </div>
-  </div>
-</section>
-<!-- footer section-->
-<footer id="footer">
-  <div class="container-fluid">
+    </div>
+  </section>
+  <!-- footer section-->
+  <footer id="footer">
+    <div class="container-fluid">
       <!-- social media icons -->
       <div class="social-icons mt-4">
-          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
+        <a href="https://twitter.com/tiagooamaral" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/tiagooamaral/" target="_blank"><i class="fab fa-linkedin"
+            aria-hidden="true"></i></a>
       </div>
-  </div>
-</footer>
+    </div>
+  </footer>
 
-<script src="script/script.js"></script>
+  <script src="script/script.js"></script>
 </body>
 
 </html>

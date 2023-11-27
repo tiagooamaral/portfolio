@@ -47,13 +47,63 @@ function myFunction() {
     }   
 }
 
+document.getElementById('more-1').addEventListener('click', function() {
+    var modal = document.getElementById('modal-1');
+    var myModal = new bootstrap.Modal(modal);
+    myModal.show();
+});
+document.getElementById('more-2').addEventListener('click', function() {
+    var modal = document.getElementById('modal-2');
+    var myModal = new bootstrap.Modal(modal);
+    myModal.show();
+});
+document.getElementById('more-3').addEventListener('click', function() {
+    var modal = document.getElementById('modal-3');
+    var myModal = new bootstrap.Modal(modal);
+    myModal.show();
+});
+document.getElementById('more-4').addEventListener('click', function() {
+    var modal = document.getElementById('modal-4');
+    var myModal = new bootstrap.Modal(modal);
+    myModal.show();
+});
+document.getElementById('more-5').addEventListener('click', function() {
+    var modal = document.getElementById('modal-5');
+    var myModal = new bootstrap.Modal(modal);
+    myModal.show();
+});
+
 let experience = document.querySelectorAll('.experience a');
 
 experience.forEach(function(item){
-    item.addEventListener('click',newFuntion);
+    item.addEventListener('click',newFuntion(item));
 })
 
-function newFuntion() {
+const listItems = document.querySelectorAll('.list-group-item');
+
+listItems.forEach(function(item) {
+  item.addEventListener('click', function() {
+    const target = this.getAttribute('href');
+    const tabPane = document.querySelector(target);
+
+    document.querySelector('.list-group-item.active').classList.remove('active');
+    this.classList.add('active');
+
+    document.querySelector('.tab-pane.show.active').classList.remove('show', 'active');
+    tabPane.classList.add('show', 'active');
+  });
+});
+function mostrarPainel(painel) {
+    // Oculta todos os painéis
+    document.getElementById('painel1').style.display = 'none';
+    document.getElementById('painel2').style.display = 'none';
+
+    // Mostra o painel selecionado
+    document.getElementById('painel' + painel).style.display = 'block';
+  }
+
+
+function newFuntion(item) {
     var itemActive = document.querySelector(".experience.active")
     var itemInactive = document.querySelector(".experience.inactive")
 
